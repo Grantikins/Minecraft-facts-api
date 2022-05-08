@@ -1,4 +1,49 @@
 .container{
-    max-width: 60%;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+.get-title{
+    font-family: "Lato", sans-serif;
+}
+
+.example{
+    background-color: rgba(18, 18, 18, .8);
+    max-width: 700px;
+    min-height: 50px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.example-text{
+    margin-left: 5px;
+}
+
+.endpoint-explanation{
+    margin-bottom: 100px;
+}
+
+.response{
+    background-color: rgba(18, 18, 18, .8);
+    max-width: 700px;
+    min-height: fit-content;
+    color: white;
+    margin-left: 30px;
+    border-radius: 10px;
+    font-family: "Roboto Mono", monospace;
+}
+
+h1{
+    font-family: "Press Start 2P", cursive;
+    margin-bottom: 100px;
 }

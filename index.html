@@ -3,19 +3,63 @@
         <title>Minecraft Facts API</title>
 
         <link rel="stylesheet" href="styles/styles.css"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="container">
 
-        <div class="container">
+        <div>
 
-            <h1>Minecraft Facts API</h1>
+            <h1 class="container">Minecraft Facts API</h1>
 
-            <div>
-                <div>
-                    <p>https://minecraft-facts-api.herokuapp.com/facts/random</p>
+            <div class="endpoint-explanation">
+                <h3 class="get-title">Get Random Fact</h3>
+                <div class="example">
+                    <p class="example-text">Example: https://minecraft-facts-api.herokuapp.com/facts/random</p>
                 </div>
-                <p>Use the /facts/random or /facts/ endpoint to get a random fact.</p>
+                <p class="description">Use the /facts/random or /facts/ endpoints to get a random fact about Minecraft.</p>
+                <h3 class="get-title">Response:</h3>
+                <div class="response">
+                    <p class="example-text">{</p>
+                    <p class="example-text">"id": 13,</p>
+                    <p class="example-text">"fact": "You can find the end portal by throwing eyes of ender and following the direction they fly in.",</p>
+                    <p class="example-text">"category": "gameplay"</p>
+                    <p class="example-text">}</p>
+                </div>
+            </div>
+
+            <div class="endpoint-explanation">
+                <h3 class="get-title">Get Fact by ID</h3>
+                <div class="example">
+                    <p class="example-text">Example: https://minecraft-facts-api.herokuapp.com/facts/1</p>
+                </div>
+                <p class="description">Use the /facts/:id endpoint to get a particular fact about Minecraft. This will always return the fact with the id that you pass.</p>
+                <h3 class="get-title">Response:</h3>
+                <div class="response">
+                    <p class="example-text">{</p>
+                    <p class="example-text">"id": 1,</p>
+                    <p class="example-text">"fact": "Minecraft is a sandbox video game developed by Mojang Studios.",</p>
+                    <p class="example-text">"category": "about"</p>
+                    <p class="example-text">}</p>
+                </div>
+            </div>
+
+            <div class="endpoint-explanation">
+                <h3 class="get-title">Get Fact by Category</h3>
+                <div class="example">
+                    <p class="example-text">Example: https://minecraft-facts-api.herokuapp.com/facts/category/about</p>
+                </div>
+                <p class="description">Use the /facts/category/about or the facts/category/gameplay endpoints to get a random fact from one of the two available categories.</p>
+                <h3 class="get-title">Response:</h3>
+                <div class="response">
+                    <p class="example-text">{</p>
+                    <p class="example-text">"id": 12,</p>
+                    <p class="example-text">"fact": "Minecraft's music was composed by Daniel Rosenfeld also known as C418.",</p>
+                    <p class="example-text">"category": "about"</p>
+                    <p class="example-text">}</p>
+                </div>
             </div>
 
         </div>
