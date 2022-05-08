@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const {test, randomFact, getFactByID, getFactFromAbout, getFactFromGameplay} = require("./controllers")
+const {test, randomFact, getFactByID, getFactFromAbout, getFactFromGameplay} = require("../controllers/api-controller")
 
 router.get("/test", test)
 router.get("/", randomFact)

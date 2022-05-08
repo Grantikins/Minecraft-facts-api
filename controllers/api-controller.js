@@ -1,4 +1,4 @@
-const facts = require("./facts")
+const facts = require("../facts")
 
 class Controllers{
 
