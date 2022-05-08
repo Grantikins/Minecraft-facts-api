@@ -1,0 +1,16 @@
+{
+  "name": "minecraft_facts_api",
+  "version": "1.0.0",
+  "description": "An api for facts about minecraft",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm install && nodemon app"
+  },
+  "author": "Grant Randell",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
